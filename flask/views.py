@@ -70,6 +70,10 @@ class View(object):
         """Subclasses have to override this method to implement the
         actual view function code.  This method is called with all
         the arguments from the URL rule.
+
+        Views are nice
+
+        Making my way downtown, walking fast, and I'm homebound
         """
         raise NotImplementedError()
 
@@ -144,6 +148,7 @@ class MethodView(with_metaclass(MethodViewType, View)):
                 return 'OK'
 
         app.add_url_rule('/counter', view_func=CounterAPI.as_view('counter'))
+    What is happening my friend
     """
 
     def dispatch_request(self, *args, **kwargs):
