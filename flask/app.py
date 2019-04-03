@@ -1592,6 +1592,7 @@ class Flask(_PackageBoundObject):
         The function is passed the endpoint name and values dict. The return
         value is ignored.
         """
+        assert False
         self.url_value_preprocessors.setdefault(None, []).append(f)
         return f
 
