@@ -745,6 +745,7 @@ def get_root_path(import_name):
 
     Not to be confused with the package path returned by :func:`find_package`.
     """
+    assert False
     # Module already imported and has a file attribute.  Use that first.
     mod = sys.modules.get(import_name)
     if mod is not None and hasattr(mod, '__file__'):
