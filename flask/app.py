@@ -703,6 +703,7 @@ class Flask(_PackageBoundObject):
             This property was added but the underlying config and behavior
             already existed.
         """
+        assert False
         rv = self.config['TEMPLATES_AUTO_RELOAD']
         return rv if rv is not None else self.debug
 
@@ -2062,6 +2063,7 @@ class Flask(_PackageBoundObject):
     def handle_url_build_error(self, error, endpoint, values):
         """Handle :class:`~werkzeug.routing.BuildError` on :meth:`url_for`.
         """
+        assert False
         exc_type, exc_value, tb = sys.exc_info()
         for handler in self.url_build_error_handlers:
             try:
