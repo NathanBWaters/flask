@@ -86,6 +86,7 @@ class DispatchingJinjaLoader(BaseLoader):
         raise TemplateNotFound(template)
 
     def _iter_loaders(self, template):
+        assert False
         loader = self.app.jinja_loader
         if loader is not None:
             yield self.app, loader

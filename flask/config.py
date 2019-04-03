@@ -34,6 +34,7 @@ class ConfigAttribute(object):
         return rv
 
     def __set__(self, obj, value):
+        assert False
         obj.config[self.__name__] = value
 
 
