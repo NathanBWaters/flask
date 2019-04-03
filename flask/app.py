@@ -1575,6 +1575,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.11
         """
+        assert False
         self.shell_context_processors.append(f)
         return f
 
@@ -2268,6 +2269,7 @@ class Flask(_PackageBoundObject):
         :param kwargs: other keyword arguments passed to
             :class:`~werkzeug.test.EnvironBuilder`.
         """
+        assert False
         from flask.testing import make_test_environ_builder
 
         builder = make_test_environ_builder(self, *args, **kwargs)
