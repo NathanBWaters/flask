@@ -160,6 +160,7 @@ class TagBytes(JSONTag):
         return isinstance(value, bytes)
 
     def to_json(self, value):
+        assert False
         return b64encode(value).decode('ascii')
 
     def to_python(self, value):
