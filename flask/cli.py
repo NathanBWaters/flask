@@ -327,7 +327,6 @@ class DispatchingApp(object):
         return rv
 
     def __call__(self, environ, start_response):
-        assert False
         __traceback_hide__ = True
         if self._app is not None:
             return self._app(environ, start_response)
