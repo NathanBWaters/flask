@@ -277,7 +277,6 @@ class SessionInterface(object):
 
         .. versionadded:: 0.11
         """
-        assert False
 
         return session.modified or (
             session.permanent and app.config['SESSION_REFRESH_EACH_REQUEST']
