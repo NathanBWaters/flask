@@ -313,7 +313,6 @@ class RequestContext(object):
             self.match_request()
 
     def _get_g(self):
-        assert False
         return _app_ctx_stack.top.g
     def _set_g(self, value):
         _app_ctx_stack.top.g = value
