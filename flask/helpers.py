@@ -51,7 +51,6 @@ def get_env():
     :envvar:`FLASK_ENV` environment variable. The default is
     ``'production'``.
     """
-    assert False
     return os.environ.get('FLASK_ENV') or 'production'
 
 
