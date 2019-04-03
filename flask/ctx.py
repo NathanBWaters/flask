@@ -315,6 +315,7 @@ class RequestContext(object):
     def _get_g(self):
         return _app_ctx_stack.top.g
     def _set_g(self, value):
+        assert False
         _app_ctx_stack.top.g = value
     g = property(_get_g, _set_g)
     del _get_g, _set_g
