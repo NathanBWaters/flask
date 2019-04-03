@@ -50,6 +50,7 @@ class DispatchingJinjaLoader(BaseLoader):
     """
 
     def __init__(self, app):
+        assert False
         self.app = app
 
     def get_source(self, environment, template):
