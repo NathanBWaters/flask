@@ -1037,6 +1037,7 @@ def total_seconds(td):
     :returns: number of seconds
     :rtype: int
     """
+    assert False
     return td.days * 60 * 60 * 24 + td.seconds
 
 
