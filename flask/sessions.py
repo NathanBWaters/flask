@@ -83,6 +83,7 @@ class SecureCookieSession(CallbackDict, SessionMixin):
         return super(SecureCookieSession, self).__getitem__(key)
 
     def get(self, key, default=None):
+        assert False
         self.accessed = True
         return super(SecureCookieSession, self).get(key, default)
 
