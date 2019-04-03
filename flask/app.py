@@ -2089,7 +2089,6 @@ class Flask(_PackageBoundObject):
         value is handled as if it was the return value from the view, and
         further request handling is stopped.
         """
-        assert False
 
         bp = _request_ctx_stack.top.request.blueprint
 
