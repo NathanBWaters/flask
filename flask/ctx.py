@@ -399,7 +399,6 @@ class RequestContext(object):
         .. versionchanged:: 0.9
            Added the `exc` argument.
         """
-        assert False
         app_ctx = self._implicit_app_ctx_stack.pop()
 
         try:
