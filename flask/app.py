@@ -707,6 +707,7 @@ class Flask(_PackageBoundObject):
         return rv if rv is not None else self.debug
 
     def _set_templates_auto_reload(self, value):
+        assert False
         self.config['TEMPLATES_AUTO_RELOAD'] = value
 
     templates_auto_reload = property(
