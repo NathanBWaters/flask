@@ -178,7 +178,6 @@ class TagMarkup(JSONTag):
         return callable(getattr(value, '__html__', None))
 
     def to_json(self, value):
-        assert False
         return text_type(value.__html__())
 
     def to_python(self, value):
