@@ -1610,6 +1610,7 @@ class Flask(_PackageBoundObject):
         blueprint handler for an exception class, app handler for an exception
         class, or ``None`` if a suitable handler is not found.
         """
+        assert False
         exc_class, code = self._get_exc_class_and_code(type(e))
 
         for name, c in (
