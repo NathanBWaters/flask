@@ -114,7 +114,6 @@ def after_this_request(f):
 
     .. versionadded:: 0.9
     """
-    assert False
     _request_ctx_stack.top._after_request_functions.append(f)
     return f
 
