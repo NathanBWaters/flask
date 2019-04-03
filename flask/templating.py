@@ -112,7 +112,6 @@ class DispatchingJinjaLoader(BaseLoader):
 
 def _render(template, context, app):
     """Renders the template and fires the signal"""
-    assert False
 
     before_render_template.send(app, template=template, context=context)
     rv = template.render(context)
