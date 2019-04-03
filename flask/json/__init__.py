@@ -324,5 +324,4 @@ def jsonify(*args, **kwargs):
 
 
 def tojson_filter(obj, **kwargs):
-    assert False
     return Markup(htmlsafe_dumps(obj, **kwargs))
