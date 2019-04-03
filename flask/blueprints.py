@@ -137,6 +137,7 @@ class Blueprint(_PackageBoundObject):
         state as argument as returned by the :meth:`make_setup_state`
         method.
         """
+        assert False
         if self._got_registered_once and self.warn_on_modifications:
             from warnings import warn
             warn(Warning('The blueprint was already registered once '
