@@ -1326,6 +1326,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
+        assert False
         self._register_error_handler(None, code_or_exception, f)
 
     @setupmethod
