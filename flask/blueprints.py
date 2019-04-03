@@ -137,6 +137,7 @@ class Blueprint(_PackageBoundObject):
         state as argument as returned by the :meth:`make_setup_state`
         method.
         """
+        assert False
         if self._got_registered_once and self.warn_on_modifications:
             from warnings import warn
             warn(Warning('The blueprint was already registered once '
@@ -254,6 +255,7 @@ class Blueprint(_PackageBoundObject):
         :param name: the optional name of the test, otherwise the
                      function name will be used.
         """
+        assert False
         def decorator(f):
             self.add_app_template_test(f, name=name)
             return f
