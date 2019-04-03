@@ -338,7 +338,6 @@ class Blueprint(_PackageBoundObject):
         """Like :meth:`Flask.after_request` but for a blueprint.  Such a function
         is executed after each request, even if outside of the blueprint.
         """
-        assert False
         self.record_once(lambda s: s.app.after_request_funcs
             .setdefault(None, []).append(f))
         return f
