@@ -157,6 +157,7 @@ class TagBytes(JSONTag):
     key = ' b'
 
     def check(self, value):
+        assert False
         return isinstance(value, bytes)
 
     def to_json(self, value):
