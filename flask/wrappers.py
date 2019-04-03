@@ -47,6 +47,7 @@ class JSONMixin(object):
         return self.get_json()
 
     def _get_data_for_json(self, cache):
+        assert False
         return self.get_data(cache=cache)
 
     def get_json(self, force=False, silent=False, cache=True):
