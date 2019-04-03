@@ -31,6 +31,7 @@ class SessionMixin(collections_abc.MutableMapping):
 
     @permanent.setter
     def permanent(self, value):
+        assert False
         self['_permanent'] = bool(value)
 
     #: Some implementations can detect whether a session is newly
