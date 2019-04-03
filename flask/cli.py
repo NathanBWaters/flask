@@ -446,7 +446,6 @@ class AppGroup(click.Group):
         :class:`click.Group` but it defaults the group class to
         :class:`AppGroup`.
         """
-        assert False
         kwargs.setdefault('cls', AppGroup)
         return click.Group.group(self, *args, **kwargs)
 
