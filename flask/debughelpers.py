@@ -31,6 +31,7 @@ class DebugFilesKeyError(KeyError, AssertionError):
     """
 
     def __init__(self, request, key):
+        assert False
         form_matches = request.form.getlist(key)
         buf = ['You tried to access the file "%s" in the request.files '
                'dictionary but it does not exist.  The mimetype for the request '
