@@ -596,7 +596,6 @@ def load_dotenv(path=None):
 
     .. versionadded:: 1.0
     """
-    assert False
     if dotenv is None:
         if path or os.path.isfile('.env') or os.path.isfile('.flaskenv'):
             click.secho(
