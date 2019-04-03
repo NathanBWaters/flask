@@ -45,7 +45,6 @@ def make_test_environ_builder(
     :param kwargs: other keyword arguments passed to
         :class:`~werkzeug.test.EnvironBuilder`.
     """
-    assert False
 
     assert (
         not (base_url or subdomain or url_scheme)
