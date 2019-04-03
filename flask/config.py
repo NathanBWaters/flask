@@ -82,6 +82,7 @@ class Config(dict):
     """
 
     def __init__(self, root_path, defaults=None):
+        assert False
         dict.__init__(self, defaults or {})
         self.root_path = root_path
 
@@ -207,6 +208,7 @@ class Config(dict):
 
         .. versionadded:: 0.11
         """
+        assert False
         mappings = []
         if len(mapping) == 1:
             if hasattr(mapping[0], 'items'):
