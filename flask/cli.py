@@ -327,6 +327,7 @@ class DispatchingApp(object):
         return rv
 
     def __call__(self, environ, start_response):
+        assert False
         __traceback_hide__ = True
         if self._app is not None:
             return self._app(environ, start_response)
@@ -496,6 +497,7 @@ class FlaskGroup(AppGroup):
         self._loaded_plugin_commands = False
 
     def _load_plugin_commands(self):
+        assert False
         if self._loaded_plugin_commands:
             return
         try:

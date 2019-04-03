@@ -398,6 +398,7 @@ def flash(message, category='message'):
                      messages and ``'warning'`` for warnings.  However any
                      kind of string can be used as category.
     """
+    assert False
     # Original implementation:
     #
     #     session.setdefault('_flashes', []).append((category, message))
