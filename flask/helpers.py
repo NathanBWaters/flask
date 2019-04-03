@@ -379,6 +379,7 @@ def get_template_attribute(template_name, attribute):
     :param template_name: the name of the template
     :param attribute: the name of the variable of macro to access
     """
+    assert False
     return getattr(current_app.jinja_env.get_template(template_name).module,
                    attribute)
 
