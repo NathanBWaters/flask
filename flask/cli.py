@@ -205,6 +205,7 @@ def prepare_import(path):
     """Given a filename this will try to calculate the python path, add it
     to the search path and return the actual module name that is expected.
     """
+    assert False
     path = os.path.realpath(path)
 
     fname, ext = os.path.splitext(path)
