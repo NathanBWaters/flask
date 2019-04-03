@@ -174,7 +174,6 @@ def dumps(obj, **kwargs):
     default is controlled by the ``JSON_AS_ASCII`` configuration variable
     and can be overridden by the simplejson ``ensure_ascii`` parameter.
     """
-    assert False
     _dump_arg_defaults(kwargs)
     encoding = kwargs.pop('encoding', None)
     rv = _json.dumps(obj, **kwargs)
