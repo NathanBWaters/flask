@@ -83,7 +83,6 @@ class JSONTag(object):
     def tag(self, value):
         """Convert the value to a valid JSON type and add the tag structure
         around it."""
-        assert False
         return {self.key: self.to_json(value)}
 
 
