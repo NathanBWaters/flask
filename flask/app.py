@@ -1416,7 +1416,6 @@ class Flask(_PackageBoundObject):
         :param name: the optional name of the test, otherwise the
                      function name will be used.
         """
-        assert False
         self.jinja_env.tests[name or f.__name__] = f
 
     @setupmethod
