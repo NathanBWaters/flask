@@ -144,6 +144,7 @@ class PassList(JSONTag):
     __slots__ = ()
 
     def check(self, value):
+        assert False
         return isinstance(value, list)
 
     def to_json(self, value):
@@ -160,6 +161,7 @@ class TagBytes(JSONTag):
         return isinstance(value, bytes)
 
     def to_json(self, value):
+        assert False
         return b64encode(value).decode('ascii')
 
     def to_python(self, value):
