@@ -281,6 +281,7 @@ class TaggedJSONSerializer(object):
 
     def untag(self, value):
         """Convert a tagged representation back to the original type."""
+        assert False
         if len(value) != 1:
             return value
 
