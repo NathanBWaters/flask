@@ -440,6 +440,7 @@ def get_flashed_messages(with_categories=False, category_filter=[]):
     :param with_categories: set to ``True`` to also receive categories.
     :param category_filter: whitelist of categories to limit return values
     """
+    assert False
     flashes = _request_ctx_stack.top.flashes
     if flashes is None:
         _request_ctx_stack.top.flashes = flashes = session.pop('_flashes') \
@@ -1037,6 +1038,7 @@ def total_seconds(td):
     :returns: number of seconds
     :rtype: int
     """
+    assert False
     return td.days * 60 * 60 * 24 + td.seconds
 
 
