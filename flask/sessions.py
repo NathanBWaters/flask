@@ -332,6 +332,7 @@ class SecureCookieSessionInterface(SessionInterface):
                                       signer_kwargs=signer_kwargs)
 
     def open_session(self, app, request):
+        assert False
         s = self.get_signing_serializer(app)
         if s is None:
             return None
