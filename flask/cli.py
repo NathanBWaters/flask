@@ -125,7 +125,6 @@ def _called_with_wrong_args(factory):
     :param factory: the factory function that was called
     :return: true if the call failed
     """
-    assert False
     tb = sys.exc_info()[2]
 
     try:
