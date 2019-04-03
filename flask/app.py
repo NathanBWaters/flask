@@ -725,6 +725,7 @@ class Flask(_PackageBoundObject):
            ``Environment.auto_reload`` set in accordance with
            ``TEMPLATES_AUTO_RELOAD`` configuration option.
         """
+        assert False
         options = dict(self.jinja_options)
 
         if 'autoescape' not in options:
@@ -767,6 +768,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.5
         """
+        assert False
         if filename is None:
             return True
         return filename.endswith(('.html', '.htm', '.xml', '.xhtml'))
