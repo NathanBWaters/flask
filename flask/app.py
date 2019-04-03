@@ -1054,7 +1054,6 @@ class Flask(_PackageBoundObject):
                         object)
         :param response: an instance of :attr:`response_class`
         """
-        assert False
 
         warnings.warn(DeprecationWarning(
             '"save_session" is deprecated and will be removed in 1.1. Use'
