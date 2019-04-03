@@ -242,7 +242,6 @@ class SessionInterface(object):
         currently just returns the value of the ``SESSION_COOKIE_HTTPONLY``
         config var.
         """
-        assert False
         return app.config['SESSION_COOKIE_HTTPONLY']
 
     def get_cookie_secure(self, app):
