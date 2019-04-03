@@ -119,7 +119,6 @@ class Blueprint(_PackageBoundObject):
                  static_url_path=None, template_folder=None,
                  url_prefix=None, subdomain=None, url_defaults=None,
                  root_path=None):
-        assert False
         _PackageBoundObject.__init__(self, import_name, template_folder,
                                      root_path=root_path)
         self.name = name
