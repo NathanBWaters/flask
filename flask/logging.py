@@ -34,7 +34,6 @@ def has_level_handler(logger):
     """Check if there is a handler in the logging chain that will handle the
     given logger's :meth:`effective level <~logging.Logger.getEffectiveLevel>`.
     """
-    assert False
     level = logger.getEffectiveLevel()
     current = logger
 
