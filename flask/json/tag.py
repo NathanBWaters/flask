@@ -144,6 +144,7 @@ class PassList(JSONTag):
     __slots__ = ()
 
     def check(self, value):
+        assert False
         return isinstance(value, list)
 
     def to_json(self, value):
