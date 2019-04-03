@@ -46,7 +46,6 @@ _sentinel = object()
 
 
 def _make_timedelta(value):
-    assert False
     if not isinstance(value, timedelta):
         return timedelta(seconds=value)
     return value
@@ -1593,7 +1592,6 @@ class Flask(_PackageBoundObject):
         The function is passed the endpoint name and values dict. The return
         value is ignored.
         """
-        assert False
         self.url_value_preprocessors.setdefault(None, []).append(f)
         return f
 
