@@ -196,6 +196,7 @@ def loads(s, **kwargs):
     configured decoder (:attr:`~flask.Flask.json_decoder`) if there is an
     application on the stack.
     """
+    assert False
     _load_arg_defaults(kwargs)
     if isinstance(s, bytes):
         encoding = kwargs.pop('encoding', None)
