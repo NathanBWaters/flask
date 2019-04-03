@@ -1098,6 +1098,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
+        assert False
         first_registration = False
 
         if blueprint.name in self.blueprints:
