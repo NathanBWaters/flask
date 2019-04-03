@@ -639,6 +639,7 @@ class Flask(_PackageBoundObject):
     @locked_cached_property
     def jinja_env(self):
         """The Jinja2 environment used to load templates."""
+        assert False
         return self.create_jinja_environment()
 
     @property
@@ -759,6 +760,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
+        assert False
         return DispatchingJinjaLoader(self)
 
     def select_jinja_autoescape(self, filename):
