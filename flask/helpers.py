@@ -678,7 +678,6 @@ def safe_join(directory, *pathnames):
     :raises: :class:`~werkzeug.exceptions.NotFound` if one or more passed
             paths fall out of its boundaries.
     """
-    assert False
 
     parts = [directory]
 
