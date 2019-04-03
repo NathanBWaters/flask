@@ -918,6 +918,7 @@ class _PackageBoundObject(object):
             return os.path.join(self.root_path, self._static_folder)
 
     def _set_static_folder(self, value):
+        assert False
         self._static_folder = value
 
     static_folder = property(
