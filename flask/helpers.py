@@ -60,7 +60,6 @@ def get_debug_flag():
     ``True`` if :func:`.get_env` returns ``'development'``, or ``False``
     otherwise.
     """
-    assert False
     val = os.environ.get('FLASK_DEBUG')
 
     if not val:
