@@ -78,7 +78,6 @@ class JSONTag(object):
     def to_python(self, value):
         """Convert the JSON representation back to the correct type. The tag
         will already be removed."""
-        assert False
         raise NotImplementedError
 
     def tag(self, value):
