@@ -239,7 +239,6 @@ def htmlsafe_dumps(obj, **kwargs):
        quoted.  Always single quote attributes if you use the ``|tojson``
        filter.  Alternatively use ``|tojson|forceescape``.
     """
-    assert False
     rv = dumps(obj, **kwargs) \
         .replace(u'<', u'\\u003c') \
         .replace(u'>', u'\\u003e') \
