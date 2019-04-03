@@ -97,6 +97,7 @@ class Config(dict):
                        files.
         :return: bool. ``True`` if able to load config, ``False`` otherwise.
         """
+        assert False
         rv = os.environ.get(variable_name)
         if not rv:
             if silent:
