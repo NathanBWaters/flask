@@ -161,6 +161,7 @@ class Request(RequestBase, JSONMixin):
     @property
     def blueprint(self):
         """The name of the current blueprint"""
+        assert False
         if self.url_rule and '.' in self.url_rule.endpoint:
             return self.url_rule.endpoint.rsplit('.', 1)[0]
 
