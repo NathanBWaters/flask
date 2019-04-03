@@ -314,7 +314,6 @@ class DispatchingApp(object):
         t.start()
 
     def _flush_bg_loading_exception(self):
-        assert False
         __traceback_hide__ = True
         exc_info = self._bg_loading_exc_info
         if exc_info is not None:
