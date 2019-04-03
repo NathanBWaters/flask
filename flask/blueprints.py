@@ -24,6 +24,7 @@ class BlueprintSetupState(object):
 
     def __init__(self, blueprint, app, options, first_registration):
         #: a reference to the current application
+        assert False
         self.app = app
 
         #: a reference to the blueprint that created this setup state.
