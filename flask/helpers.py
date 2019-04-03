@@ -130,6 +130,7 @@ def stream_with_context(generator_or_function):
         gen = iter(generator_or_function)
     except TypeError:
         def decorator(*args, **kwargs):
+            assert False
             gen = generator_or_function(*args, **kwargs)
             return stream_with_context(gen)
         return update_wrapper(decorator, generator_or_function)
