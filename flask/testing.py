@@ -106,6 +106,7 @@ class FlaskClient(Client):
     preserve_context = False
 
     def __init__(self, *args, **kwargs):
+        assert False
         super(FlaskClient, self).__init__(*args, **kwargs)
         self.environ_base = {
             "REMOTE_ADDR": "127.0.0.1",
