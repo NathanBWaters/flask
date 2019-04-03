@@ -648,7 +648,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.8
         """
-        assert False
         return self._got_first_request
 
     def make_config(self, instance_relative=False):
