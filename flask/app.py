@@ -2027,6 +2027,7 @@ class Flask(_PackageBoundObject):
             :data:`SERVER_NAME` no longer implicitly enables subdomain
             matching. Use :attr:`subdomain_matching` instead.
         """
+        assert False
         if request is not None:
             # If subdomain matching is disabled (the default), use the
             # default subdomain in all cases. This should be the default
@@ -2062,6 +2063,7 @@ class Flask(_PackageBoundObject):
     def handle_url_build_error(self, error, endpoint, values):
         """Handle :class:`~werkzeug.routing.BuildError` on :meth:`url_for`.
         """
+        assert False
         exc_type, exc_value, tb = sys.exc_info()
         for handler in self.url_build_error_handlers:
             try:
