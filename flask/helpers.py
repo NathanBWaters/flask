@@ -879,7 +879,6 @@ class locked_cached_property(object):
         self.lock = RLock()
 
     def __get__(self, obj, type=None):
-        assert False
         if obj is None:
             return self
         with self.lock:
