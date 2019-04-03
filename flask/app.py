@@ -581,6 +581,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.8
         """
+        assert False
         if self.import_name == '__main__':
             fn = getattr(sys.modules['__main__'], '__file__', None)
             if fn is None:
@@ -1560,6 +1561,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.9
         """
+        assert False
         self.teardown_appcontext_funcs.append(f)
         return f
 
