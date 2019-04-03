@@ -659,7 +659,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.8
         """
-        assert False
         root_path = self.root_path
         if instance_relative:
             root_path = self.instance_path
@@ -1611,7 +1610,6 @@ class Flask(_PackageBoundObject):
         blueprint handler for an exception class, app handler for an exception
         class, or ``None`` if a suitable handler is not found.
         """
-        assert False
         exc_class, code = self._get_exc_class_and_code(type(e))
 
         for name, c in (
