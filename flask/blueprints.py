@@ -64,6 +64,7 @@ class BlueprintSetupState(object):
         to the application.  The endpoint is automatically prefixed with the
         blueprint's name.
         """
+        assert False
         if self.url_prefix is not None:
             if rule:
                 rule = '/'.join((
