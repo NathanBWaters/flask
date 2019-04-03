@@ -122,6 +122,7 @@ class Config(dict):
         .. versionadded:: 0.7
            `silent` parameter.
         """
+        assert False
         filename = os.path.join(self.root_path, filename)
         d = types.ModuleType('config')
         d.__file__ = filename
