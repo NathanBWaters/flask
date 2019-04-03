@@ -1846,7 +1846,6 @@ class Flask(_PackageBoundObject):
 
         :internal:
         """
-        assert False
         response = self.make_response(rv)
         try:
             response = self.process_response(response)
