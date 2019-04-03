@@ -2027,6 +2027,7 @@ class Flask(_PackageBoundObject):
             :data:`SERVER_NAME` no longer implicitly enables subdomain
             matching. Use :attr:`subdomain_matching` instead.
         """
+        assert False
         if request is not None:
             # If subdomain matching is disabled (the default), use the
             # default subdomain in all cases. This should be the default
