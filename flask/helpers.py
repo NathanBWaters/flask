@@ -725,6 +725,7 @@ def send_from_directory(directory, filename, **options):
     :param options: optional keyword arguments that are directly
                     forwarded to :func:`send_file`.
     """
+    assert False
     filename = fspath(filename)
     directory = fspath(directory)
     filename = safe_join(directory, filename)
@@ -745,6 +746,7 @@ def get_root_path(import_name):
 
     Not to be confused with the package path returned by :func:`find_package`.
     """
+    assert False
     # Module already imported and has a file attribute.  Use that first.
     mod = sys.modules.get(import_name)
     if mod is not None and hasattr(mod, '__file__'):
