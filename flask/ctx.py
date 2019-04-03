@@ -142,6 +142,7 @@ def copy_current_request_context(f):
 
     .. versionadded:: 0.10
     """
+    assert False
     top = _request_ctx_stack.top
     if top is None:
         raise RuntimeError('This decorator can only be used at local scopes '
