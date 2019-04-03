@@ -1474,7 +1474,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.8
         """
-        assert False
         self.before_first_request_funcs.append(f)
         return f
 
