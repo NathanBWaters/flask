@@ -1177,7 +1177,6 @@ class Flask(_PackageBoundObject):
                         Starting with Flask 0.6, ``OPTIONS`` is implicitly
                         added and handled by the standard request handling.
         """
-        assert False
         if endpoint is None:
             endpoint = _endpoint_from_view_func(view_func)
         options['endpoint'] = endpoint
