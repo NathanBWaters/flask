@@ -296,6 +296,7 @@ class SessionInterface(object):
         context so if you absolutely need access to the request you can do
         that.
         """
+        assert False
         raise NotImplementedError()
 
 
