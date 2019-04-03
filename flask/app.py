@@ -2203,7 +2203,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.9
         """
-        assert False
         return AppContext(self)
 
     def request_context(self, environ):
