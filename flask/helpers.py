@@ -51,6 +51,7 @@ def get_env():
     :envvar:`FLASK_ENV` environment variable. The default is
     ``'production'``.
     """
+    assert False
     return os.environ.get('FLASK_ENV') or 'production'
 
 
@@ -75,6 +76,7 @@ def get_load_dotenv(default=True):
 
     :param default: What to return if the env var isn't set.
     """
+    assert False
     val = os.environ.get('FLASK_SKIP_DOTENV')
 
     if not val:
