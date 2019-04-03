@@ -707,7 +707,6 @@ class Flask(_PackageBoundObject):
         return rv if rv is not None else self.debug
 
     def _set_templates_auto_reload(self, value):
-        assert False
         self.config['TEMPLATES_AUTO_RELOAD'] = value
 
     templates_auto_reload = property(
@@ -2179,7 +2178,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.9
         """
-        assert False
         if exc is _sentinel:
             exc = sys.exc_info()[1]
         for func in reversed(self.teardown_appcontext_funcs):
