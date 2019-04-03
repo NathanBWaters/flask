@@ -52,7 +52,6 @@ class _AppCtxGlobals(object):
 
         .. versionadded:: 0.10
         """
-        assert False
         return self.__dict__.get(name, default)
 
     def pop(self, name, default=_sentinel):
