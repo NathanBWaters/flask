@@ -234,7 +234,6 @@ class SessionInterface(object):
         config var if it's set, and falls back to ``APPLICATION_ROOT`` or
         uses ``/`` if it's ``None``.
         """
-        assert False
         return app.config['SESSION_COOKIE_PATH'] \
                or app.config['APPLICATION_ROOT']
 
