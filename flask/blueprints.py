@@ -269,7 +269,6 @@ class Blueprint(_PackageBoundObject):
         :param name: the optional name of the test, otherwise the
                      function name will be used.
         """
-        assert False
         def register_template(state):
             state.app.jinja_env.tests[name or f.__name__] = f
         self.record_once(register_template)
