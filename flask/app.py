@@ -659,7 +659,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.8
         """
-        assert False
         root_path = self.root_path
         if instance_relative:
             root_path = self.instance_path
