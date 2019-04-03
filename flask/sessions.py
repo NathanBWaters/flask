@@ -168,7 +168,6 @@ class SessionInterface(object):
         This checks if the object is an instance of :attr:`null_session_class`
         by default.
         """
-        assert False
         return isinstance(obj, self.null_session_class)
 
     def get_cookie_domain(self, app):
