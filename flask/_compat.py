@@ -53,6 +53,7 @@ else:
     exec('def reraise(tp, value, tb=None):\n raise tp, value, tb')
 
     def implements_to_string(cls):
+        assert False
         cls.__unicode__ = cls.__str__
         cls.__str__ = lambda x: x.__unicode__().encode('utf-8')
         return cls
