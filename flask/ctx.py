@@ -183,7 +183,6 @@ def has_request_context():
 
     .. versionadded:: 0.7
     """
-    assert False
     return _request_ctx_stack.top is not None
 
 
