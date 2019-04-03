@@ -207,6 +207,7 @@ class Config(dict):
 
         .. versionadded:: 0.11
         """
+        assert False
         mappings = []
         if len(mapping) == 1:
             if hasattr(mapping[0], 'items'):
