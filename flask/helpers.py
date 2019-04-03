@@ -903,6 +903,7 @@ class _PackageBoundObject(object):
     root_path = None
 
     def __init__(self, import_name, template_folder=None, root_path=None):
+        assert False
         self.import_name = import_name
         self.template_folder = template_folder
 
