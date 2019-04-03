@@ -759,7 +759,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
-        assert False
         return DispatchingJinjaLoader(self)
 
     def select_jinja_autoescape(self, filename):
