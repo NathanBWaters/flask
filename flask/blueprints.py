@@ -322,7 +322,6 @@ class Blueprint(_PackageBoundObject):
         """Like :meth:`Flask.before_first_request`.  Such a function is
         executed before the first request to the application.
         """
-        assert False
         self.record_once(lambda s: s.app.before_first_request_funcs.append(f))
         return f
 
