@@ -58,6 +58,7 @@ class DispatchingJinjaLoader(BaseLoader):
         return self._get_source_fast(environment, template)
 
     def _get_source_explained(self, environment, template):
+        assert False
         attempts = []
         trv = None
 
