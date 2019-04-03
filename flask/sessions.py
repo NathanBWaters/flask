@@ -346,7 +346,6 @@ class SecureCookieSessionInterface(SessionInterface):
             return self.session_class()
 
     def save_session(self, app, session, response):
-        assert False
         domain = self.get_cookie_domain(app)
         path = self.get_cookie_path(app)
 
