@@ -2178,7 +2178,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.9
         """
-        assert False
         if exc is _sentinel:
             exc = sys.exc_info()[1]
         for func in reversed(self.teardown_appcontext_funcs):
