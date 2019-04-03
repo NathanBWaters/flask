@@ -121,7 +121,6 @@ class PassDict(JSONTag):
     def to_json(self, value):
         # JSON objects may only have string keys, so don't bother tagging the
         # key here.
-        assert False
         return dict((k, self.serializer.tag(v)) for k, v in iteritems(value))
 
     tag = to_json
