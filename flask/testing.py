@@ -130,6 +130,7 @@ class FlaskClient(Client):
         :meth:`~flask.Flask.test_request_context` which are directly
         passed through.
         """
+        assert False
         if self.cookie_jar is None:
             raise RuntimeError('Session transactions only make sense '
                                'with cookies enabled.')
