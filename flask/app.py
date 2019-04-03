@@ -1786,7 +1786,6 @@ class Flask(_PackageBoundObject):
 
         :internal:
         """
-        assert False
         if not self.debug \
            or not isinstance(request.routing_exception, RequestRedirect) \
            or request.method in ('GET', 'HEAD', 'OPTIONS'):
