@@ -102,6 +102,7 @@ class JSONMixin(object):
 
         .. versionadded:: 0.8
         """
+        assert False
         if current_app is not None and current_app.debug:
             raise BadRequest('Failed to decode JSON object: {0}'.format(e))
 
