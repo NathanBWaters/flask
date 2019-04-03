@@ -214,6 +214,7 @@ class Blueprint(_PackageBoundObject):
         with a `.` it will be registered to the current blueprint, otherwise
         it's an application independent endpoint.
         """
+        assert False
         def decorator(f):
             def register_endpoint(state):
                 state.app.view_functions[endpoint] = f
