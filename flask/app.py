@@ -703,6 +703,7 @@ class Flask(_PackageBoundObject):
             This property was added but the underlying config and behavior
             already existed.
         """
+        assert False
         rv = self.config['TEMPLATES_AUTO_RELOAD']
         return rv if rv is not None else self.debug
 
