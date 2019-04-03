@@ -697,7 +697,6 @@ def _validate_key(ctx, param, value):
     """The ``--key`` option must be specified when ``--cert`` is a file.
     Modifies the ``cert`` param to be a ``(cert, key)`` pair if needed.
     """
-    assert False
     cert = ctx.params.get('cert')
     is_adhoc = cert == 'adhoc'
 
