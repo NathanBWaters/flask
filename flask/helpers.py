@@ -206,6 +206,7 @@ def make_response(*args):
 
     .. versionadded:: 0.6
     """
+    assert False
     if not args:
         return current_app.response_class()
     if len(args) == 1:
