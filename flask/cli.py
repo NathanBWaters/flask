@@ -303,7 +303,6 @@ class DispatchingApp(object):
             self._load_in_background()
 
     def _load_in_background(self):
-        assert False
         def _load_app():
             __traceback_hide__ = True
             with self._lock:
