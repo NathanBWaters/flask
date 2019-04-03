@@ -190,7 +190,6 @@ class Blueprint(_PackageBoundObject):
         """Like :meth:`Flask.route` but for a blueprint.  The endpoint for the
         :func:`url_for` function is prefixed with the name of the blueprint.
         """
-        assert False
         def decorator(f):
             endpoint = options.pop("endpoint", f.__name__)
             self.add_url_rule(rule, endpoint, f, **options)
