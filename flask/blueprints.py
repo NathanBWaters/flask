@@ -314,7 +314,6 @@ class Blueprint(_PackageBoundObject):
         """Like :meth:`Flask.before_request`.  Such a function is executed
         before each request, even if outside of a blueprint.
         """
-        assert False
         self.record_once(lambda s: s.app.before_request_funcs
             .setdefault(None, []).append(f))
         return f
