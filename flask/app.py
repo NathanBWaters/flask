@@ -803,7 +803,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.11
         """
-        assert False
         rv = {'app': self, 'g': g}
         for processor in self.shell_context_processors:
             rv.update(processor())
@@ -1072,7 +1071,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
-        assert False
 
         warnings.warn(DeprecationWarning(
             '"make_null_session" is deprecated and will be removed in 1.1. Use'
