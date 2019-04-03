@@ -209,7 +209,6 @@ class TagDateTime(JSONTag):
         return http_date(value)
 
     def to_python(self, value):
-        assert False
         return parse_date(value)
 
 
