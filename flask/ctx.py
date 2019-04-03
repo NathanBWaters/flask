@@ -445,7 +445,6 @@ class RequestContext(object):
             self.pop(exc)
 
     def __enter__(self):
-        assert False
         self.push()
         return self
 
