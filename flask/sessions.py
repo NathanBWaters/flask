@@ -159,6 +159,7 @@ class SessionInterface(object):
 
         This creates an instance of :attr:`null_session_class` by default.
         """
+        assert False
         return self.null_session_class()
 
     def is_null_session(self, obj):
