@@ -767,7 +767,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.5
         """
-        assert False
         if filename is None:
             return True
         return filename.endswith(('.html', '.htm', '.xml', '.xhtml'))
