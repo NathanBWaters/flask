@@ -1560,6 +1560,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.9
         """
+        assert False
         self.teardown_appcontext_funcs.append(f)
         return f
 
