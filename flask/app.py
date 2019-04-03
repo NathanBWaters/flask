@@ -1263,6 +1263,7 @@ class Flask(_PackageBoundObject):
 
         :param endpoint: the name of the endpoint
         """
+        assert False
         def decorator(f):
             self.view_functions[endpoint] = f
             return f
