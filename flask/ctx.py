@@ -278,6 +278,7 @@ class RequestContext(object):
     """
 
     def __init__(self, app, environ, request=None, session=None):
+        assert False
         self.app = app
         if request is None:
             request = app.request_class(environ)
