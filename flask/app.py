@@ -1433,6 +1433,7 @@ class Flask(_PackageBoundObject):
         :param name: the optional name of the global function, otherwise the
                      function name will be used.
         """
+        assert False
         def decorator(f):
             self.add_template_global(f, name=name)
             return f
