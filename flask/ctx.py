@@ -142,7 +142,6 @@ def copy_current_request_context(f):
 
     .. versionadded:: 0.10
     """
-    assert False
     top = _request_ctx_stack.top
     if top is None:
         raise RuntimeError('This decorator can only be used at local scopes '
@@ -279,7 +278,6 @@ class RequestContext(object):
     """
 
     def __init__(self, app, environ, request=None, session=None):
-        assert False
         self.app = app
         if request is None:
             request = app.request_class(environ)
