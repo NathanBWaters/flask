@@ -957,7 +957,6 @@ class _PackageBoundObject(object):
 
         .. versionadded:: 0.5
         """
-        assert False
         if self.template_folder is not None:
             return FileSystemLoader(os.path.join(self.root_path,
                                                  self.template_folder))

@@ -31,7 +31,6 @@ if not PY2:
     import collections.abc as collections_abc
 
     def reraise(tp, value, tb=None):
-        assert False
         if value.__traceback__ is not tb:
             raise value.with_traceback(tb)
         raise value
