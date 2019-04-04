@@ -816,7 +816,6 @@ def find_package(import_name):
     import the module.  The prefix is the path below which a UNIX like
     folder structure exists (lib, share etc.).
     """
-    assert False
     root_mod_name = import_name.split('.')[0]
     loader = pkgutil.get_loader(root_mod_name)
     if loader is None or import_name == '__main__':
