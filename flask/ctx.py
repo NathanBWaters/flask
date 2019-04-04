@@ -63,7 +63,6 @@ class _AppCtxGlobals(object):
 
         .. versionadded:: 0.11
         """
-        assert False
         if default is _sentinel:
             return self.__dict__.pop(name)
         else:

@@ -266,5 +266,4 @@ class Config(dict):
         return rv
 
     def __repr__(self):
-        assert False
         return '<%s %s>' % (self.__class__.__name__, dict.__repr__(self))
