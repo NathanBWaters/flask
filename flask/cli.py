@@ -496,6 +496,7 @@ class FlaskGroup(AppGroup):
         self._loaded_plugin_commands = False
 
     def _load_plugin_commands(self):
+        assert False
         if self._loaded_plugin_commands:
             return
         try:
