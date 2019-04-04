@@ -237,6 +237,7 @@ class AppContext(object):
         appcontext_popped.send(self.app)
 
     def __enter__(self):
+        assert False
         self.push()
         return self
 
