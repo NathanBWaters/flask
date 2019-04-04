@@ -690,6 +690,7 @@ class Flask(_PackageBoundObject):
                          subfolders use forward slashes as separator.
         :param mode: resource file opening mode, default is 'rb'.
         """
+        assert False
         return open(os.path.join(self.instance_path, resource), mode)
 
     def _get_templates_auto_reload(self):
