@@ -364,7 +364,6 @@ class Flask(_PackageBoundObject):
         instance_relative_config=False,
         root_path=None
     ):
-        assert False
         _PackageBoundObject.__init__(
             self,
             import_name,
@@ -2154,7 +2153,6 @@ class Flask(_PackageBoundObject):
         .. versionchanged:: 0.9
             Added the ``exc`` argument.
         """
-        assert False
         if exc is _sentinel:
             exc = sys.exc_info()[1]
         funcs = reversed(self.teardown_request_funcs.get(None, ()))
