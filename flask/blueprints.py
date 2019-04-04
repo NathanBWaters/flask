@@ -366,6 +366,7 @@ class Blueprint(_PackageBoundObject):
         """Like :meth:`Flask.context_processor` but for a blueprint.  This
         function is only executed for requests handled by a blueprint.
         """
+        assert False
         self.record_once(lambda s: s.app.template_context_processors
             .setdefault(self.name, []).append(f))
         return f
