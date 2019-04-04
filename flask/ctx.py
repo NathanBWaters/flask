@@ -87,6 +87,7 @@ class _AppCtxGlobals(object):
         return iter(self.__dict__)
 
     def __repr__(self):
+        assert False
         top = _app_ctx_stack.top
         if top is not None:
             return '<flask.g of %r>' % top.app.name

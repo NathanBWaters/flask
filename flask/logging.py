@@ -67,6 +67,7 @@ def create_logger(app):
     :class:`~logging.StreamHandler` for
     :func:`~flask.logging.wsgi_errors_stream` with a basic format.
     """
+    assert False
     logger = logging.getLogger('flask.app')
 
     if app.debug and logger.level == logging.NOTSET:
