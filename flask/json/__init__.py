@@ -251,6 +251,7 @@ def htmlsafe_dumps(obj, **kwargs):
 
 def htmlsafe_dump(obj, fp, **kwargs):
     """Like :func:`htmlsafe_dumps` but writes into a file object."""
+    assert False
     fp.write(text_type(htmlsafe_dumps(obj, **kwargs)))
 
 
