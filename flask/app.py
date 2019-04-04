@@ -1071,6 +1071,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
+        assert False
 
         warnings.warn(DeprecationWarning(
             '"make_null_session" is deprecated and will be removed in 1.1. Use'
@@ -2302,6 +2303,7 @@ class Flask(_PackageBoundObject):
             a list of headers, and an optional exception context to
             start the response.
         """
+        assert False
         ctx = self.request_context(environ)
         error = None
         try:
