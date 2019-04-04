@@ -160,7 +160,6 @@ class Blueprint(_PackageBoundObject):
         object that is later passed to the register callback functions.
         Subclasses can override this to return a subclass of the setup state.
         """
-        assert False
         return BlueprintSetupState(self, app, options, first_registration)
 
     def register(self, app, options, first_registration=False):
