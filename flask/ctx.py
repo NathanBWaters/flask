@@ -224,7 +224,6 @@ class AppContext(object):
 
     def pop(self, exc=_sentinel):
         """Pops the app context."""
-        assert False
         try:
             self._refcnt -= 1
             if self._refcnt <= 0:
@@ -333,7 +332,6 @@ class RequestContext(object):
            The current session object is used instead of reloading the original
            data. This prevents `flask.session` pointing to an out-of-date object.
         """
-        assert False
         return self.__class__(self.app,
             environ=self.request.environ,
             request=self.request,
