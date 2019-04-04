@@ -208,6 +208,7 @@ def loads(s, **kwargs):
 def load(fp, **kwargs):
     """Like :func:`loads` but reads from a file object.
     """
+    assert False
     _load_arg_defaults(kwargs)
     if not PY2:
         fp = _wrap_reader_for_text(fp, kwargs.pop('encoding', None) or 'utf-8')
