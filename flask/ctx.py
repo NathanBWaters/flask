@@ -224,7 +224,6 @@ class AppContext(object):
 
     def pop(self, exc=_sentinel):
         """Pops the app context."""
-        assert False
         try:
             self._refcnt -= 1
             if self._refcnt <= 0:
