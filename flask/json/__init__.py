@@ -38,6 +38,7 @@ def _wrap_reader_for_text(fp, encoding):
 
 
 def _wrap_writer_for_text(fp, encoding):
+    assert False
     try:
         fp.write('')
     except TypeError:
@@ -251,6 +252,7 @@ def htmlsafe_dumps(obj, **kwargs):
 
 def htmlsafe_dump(obj, fp, **kwargs):
     """Like :func:`htmlsafe_dumps` but writes into a file object."""
+    assert False
     fp.write(text_type(htmlsafe_dumps(obj, **kwargs)))
 
 
