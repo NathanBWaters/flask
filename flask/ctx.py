@@ -342,7 +342,6 @@ class RequestContext(object):
         """Can be overridden by a subclass to hook into the matching
         of the request.
         """
-        assert False
         try:
             url_rule, self.request.view_args = \
                 self.url_adapter.match(return_rule=True)
