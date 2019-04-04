@@ -231,7 +231,6 @@ def prepare_import(path):
 
 
 def locate_app(script_info, module_name, app_name, raise_if_not_found=True):
-    assert False
     __traceback_hide__ = True
 
     try:
