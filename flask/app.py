@@ -595,7 +595,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
-        assert False
         rv = self.config['PROPAGATE_EXCEPTIONS']
         if rv is not None:
             return rv
