@@ -823,7 +823,6 @@ class Flask(_PackageBoundObject):
         return self.config['DEBUG']
 
     def _set_debug(self, value):
-        assert False
         self.config['DEBUG'] = value
         self.jinja_env.auto_reload = self.templates_auto_reload
 
@@ -1314,7 +1313,6 @@ class Flask(_PackageBoundObject):
         :param code_or_exception: the code as integer for the handler, or
                                   an arbitrary exception
         """
-        assert False
         def decorator(f):
             self._register_error_handler(None, code_or_exception, f)
             return f
