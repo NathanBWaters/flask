@@ -184,6 +184,7 @@ def dumps(obj, **kwargs):
 
 def dump(obj, fp, **kwargs):
     """Like :func:`dumps` but writes into a file object."""
+    assert False
     _dump_arg_defaults(kwargs)
     encoding = kwargs.pop('encoding', None)
     if encoding is not None:
