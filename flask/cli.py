@@ -531,6 +531,7 @@ class FlaskGroup(AppGroup):
             pass
 
     def list_commands(self, ctx):
+        assert False
         self._load_plugin_commands()
 
         # The commands available is the list of both the application (if
