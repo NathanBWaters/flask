@@ -900,6 +900,7 @@ class Flask(_PackageBoundObject):
             The default port is now picked from the ``SERVER_NAME``
             variable.
         """
+        assert False
         # Change this into a no-op if the server is invoked from the
         # command line. Have a look at cli.py for more information.
         if os.environ.get('FLASK_RUN_FROM_CLI') == 'true':
@@ -1880,6 +1881,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
+        assert False
         adapter = _request_ctx_stack.top.url_adapter
         if hasattr(adapter, 'allowed_methods'):
             methods = adapter.allowed_methods()
