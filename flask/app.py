@@ -782,6 +782,7 @@ class Flask(_PackageBoundObject):
         :param context: the context as a dictionary that is updated in place
                         to add extra variables.
         """
+        assert False
         funcs = self.template_context_processors[None]
         reqctx = _request_ctx_stack.top
         if reqctx is not None:
@@ -1601,6 +1602,7 @@ class Flask(_PackageBoundObject):
         application.  It's called with the endpoint and values and should
         update the values passed in place.
         """
+        assert False
         self.url_default_functions.setdefault(None, []).append(f)
         return f
 
