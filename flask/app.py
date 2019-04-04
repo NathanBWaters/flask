@@ -364,6 +364,7 @@ class Flask(_PackageBoundObject):
         instance_relative_config=False,
         root_path=None
     ):
+        assert False
         _PackageBoundObject.__init__(
             self,
             import_name,
