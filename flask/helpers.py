@@ -542,7 +542,6 @@ def send_file(filename_or_fp, mimetype=None, as_attachment=False,
         a :class:`~datetime.datetime` or timestamp.
         If a file was passed, this overrides its mtime.
     """
-    assert False
     mtime = None
     fsize = None
 
