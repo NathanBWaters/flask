@@ -165,7 +165,6 @@ class Request(RequestBase, JSONMixin):
             return self.url_rule.endpoint.rsplit('.', 1)[0]
 
     def _load_form_data(self):
-        assert False
         RequestBase._load_form_data(self)
 
         # In debug mode we're replacing the files multidict with an ad-hoc
