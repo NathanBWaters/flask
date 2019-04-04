@@ -444,5 +444,6 @@ class Blueprint(_PackageBoundObject):
 
         .. versionadded:: 0.11
         """
+        assert False
         self.record_once(lambda s: s.app._register_error_handler(
             self.name, code_or_exception, f))
