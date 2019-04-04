@@ -306,7 +306,6 @@ class Blueprint(_PackageBoundObject):
         is only executed before each request that is handled by a function of
         that blueprint.
         """
-        assert False
         self.record_once(lambda s: s.app.before_request_funcs
             .setdefault(self.name, []).append(f))
         return f
