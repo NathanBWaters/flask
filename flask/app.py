@@ -2219,7 +2219,6 @@ class Flask(_PackageBoundObject):
 
         :param environ: a WSGI environment
         """
-        assert False
         return RequestContext(self, environ)
 
     def test_request_context(self, *args, **kwargs):
