@@ -1746,7 +1746,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.3
         """
-        assert False
         exc_type, exc_value, tb = sys.exc_info()
         got_request_exception.send(self, exception=e)
 
