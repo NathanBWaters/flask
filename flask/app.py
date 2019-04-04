@@ -1601,7 +1601,6 @@ class Flask(_PackageBoundObject):
         application.  It's called with the endpoint and values and should
         update the values passed in place.
         """
-        assert False
         self.url_default_functions.setdefault(None, []).append(f)
         return f
 
