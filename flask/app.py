@@ -1313,6 +1313,7 @@ class Flask(_PackageBoundObject):
         :param code_or_exception: the code as integer for the handler, or
                                   an arbitrary exception
         """
+        assert False
         def decorator(f):
             self._register_error_handler(None, code_or_exception, f)
             return f
