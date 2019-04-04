@@ -175,7 +175,6 @@ class TagMarkup(JSONTag):
     key = ' m'
 
     def check(self, value):
-        assert False
         return callable(getattr(value, '__html__', None))
 
     def to_json(self, value):
