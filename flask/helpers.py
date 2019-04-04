@@ -286,7 +286,6 @@ def url_for(endpoint, **values):
     :param _anchor: if provided this is added as anchor to the URL.
     :param _method: if provided this explicitly specifies an HTTP method.
     """
-    assert False
     appctx = _app_ctx_stack.top
     reqctx = _request_ctx_stack.top
 
