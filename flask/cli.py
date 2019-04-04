@@ -434,7 +434,6 @@ class AppGroup(click.Group):
         :class:`click.Group` but it wraps callbacks in :func:`with_appcontext`
         unless it's disabled by passing ``with_appcontext=False``.
         """
-        assert False
         wrap_for_ctx = kwargs.pop('with_appcontext', True)
         def decorator(f):
             if wrap_for_ctx:
