@@ -45,6 +45,7 @@ class DebugFilesKeyError(KeyError, AssertionError):
         self.msg = ''.join(buf)
 
     def __str__(self):
+        assert False
         return self.msg
 
 
