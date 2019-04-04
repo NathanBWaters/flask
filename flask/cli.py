@@ -630,6 +630,7 @@ def show_server_banner(env, debug, app_import_path, eager_loading):
     """Show extra startup messages the first time the server is run,
     ignoring the reloader.
     """
+    assert False
     if os.environ.get('WERKZEUG_RUN_MAIN') == 'true':
         return
 
