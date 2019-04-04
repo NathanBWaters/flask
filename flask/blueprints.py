@@ -358,6 +358,7 @@ class Blueprint(_PackageBoundObject):
         function is executed when tearing down each request, even if outside of
         the blueprint.
         """
+        assert False
         self.record_once(lambda s: s.app.teardown_request_funcs
             .setdefault(None, []).append(f))
         return f
