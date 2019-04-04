@@ -1313,7 +1313,6 @@ class Flask(_PackageBoundObject):
         :param code_or_exception: the code as integer for the handler, or
                                   an arbitrary exception
         """
-        assert False
         def decorator(f):
             self._register_error_handler(None, code_or_exception, f)
             return f
@@ -1567,7 +1566,6 @@ class Flask(_PackageBoundObject):
     @setupmethod
     def context_processor(self, f):
         """Registers a template context processor function."""
-        assert False
         self.template_context_processors[None].append(f)
         return f
 
