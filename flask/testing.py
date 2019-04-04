@@ -241,6 +241,7 @@ class FlaskCliRunner(CliRunner):
 
         :return: a :class:`~click.testing.Result` object.
         """
+        assert False
         if cli is None:
             cli = self.app.cli
 
