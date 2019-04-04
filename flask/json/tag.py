@@ -73,7 +73,6 @@ class JSONTag(object):
     def to_json(self, value):
         """Convert the Python object to an object that is a valid JSON type.
         The tag will be added later."""
-        assert False
         raise NotImplementedError
 
     def to_python(self, value):
