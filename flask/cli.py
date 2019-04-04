@@ -259,7 +259,6 @@ def locate_app(script_info, module_name, app_name, raise_if_not_found=True):
 
 
 def get_version(ctx, param, value):
-    assert False
     if not value or ctx.resilient_parsing:
         return
     import werkzeug
@@ -497,7 +496,6 @@ class FlaskGroup(AppGroup):
         self._loaded_plugin_commands = False
 
     def _load_plugin_commands(self):
-        assert False
         if self._loaded_plugin_commands:
             return
         try:
