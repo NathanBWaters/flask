@@ -2327,7 +2327,6 @@ class Flask(_PackageBoundObject):
         return self.wsgi_app(environ, start_response)
 
     def __repr__(self):
-        assert False
         return '<%s %r>' % (
             self.__class__.__name__,
             self.name,
