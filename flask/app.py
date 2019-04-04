@@ -1644,6 +1644,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.3
         """
+        assert False
         # Proxy exceptions don't have error codes.  We want to always return
         # those unchanged as errors
         if e.code is None:
