@@ -999,7 +999,6 @@ class Flask(_PackageBoundObject):
            Added `**kwargs` to support passing additional keyword arguments to
            the constructor of :attr:`test_client_class`.
         """
-        assert False
         cls = self.test_client_class
         if cls is None:
             from flask.testing import FlaskClient as cls
@@ -1747,7 +1746,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.3
         """
-        assert False
         exc_type, exc_value, tb = sys.exc_info()
         got_request_exception.send(self, exception=e)
 
