@@ -408,6 +408,7 @@ class Blueprint(_PackageBoundObject):
     def app_url_value_preprocessor(self, f):
         """Same as :meth:`url_value_preprocessor` but application wide.
         """
+        assert False
         self.record_once(lambda s: s.app.url_value_preprocessors
             .setdefault(None, []).append(f))
         return f
