@@ -38,6 +38,7 @@ class Environment(BaseEnvironment):
     """
 
     def __init__(self, app, **options):
+        assert False
         if 'loader' not in options:
             options['loader'] = app.create_global_jinja_loader()
         BaseEnvironment.__init__(self, **options)
