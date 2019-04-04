@@ -216,7 +216,6 @@ class AppContext(object):
 
     def push(self):
         """Binds the app context to the current context."""
-        assert False
         self._refcnt += 1
         if hasattr(sys, 'exc_clear'):
             sys.exc_clear()
