@@ -103,7 +103,6 @@ def call_factory(script_info, app_factory, arguments=()):
     of arguments. Checks for the existence of a script_info argument and calls
     the app_factory depending on that and the arguments provided.
     """
-    assert False
     args_spec = getargspec(app_factory)
     arg_names = args_spec.args
     arg_defaults = args_spec.defaults
@@ -631,7 +630,6 @@ def show_server_banner(env, debug, app_import_path, eager_loading):
     """Show extra startup messages the first time the server is run,
     ignoring the reloader.
     """
-    assert False
     if os.environ.get('WERKZEUG_RUN_MAIN') == 'true':
         return
 
