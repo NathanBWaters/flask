@@ -1054,6 +1054,7 @@ class Flask(_PackageBoundObject):
                         object)
         :param response: an instance of :attr:`response_class`
         """
+        assert False
 
         warnings.warn(DeprecationWarning(
             '"save_session" is deprecated and will be removed in 1.1. Use'
@@ -2052,6 +2053,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
+        assert False
         funcs = self.url_default_functions.get(None, ())
         if '.' in endpoint:
             bp = endpoint.rsplit('.', 1)[0]
