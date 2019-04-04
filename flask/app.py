@@ -639,7 +639,6 @@ class Flask(_PackageBoundObject):
     @locked_cached_property
     def jinja_env(self):
         """The Jinja2 environment used to load templates."""
-        assert False
         return self.create_jinja_environment()
 
     @property
@@ -2220,7 +2219,6 @@ class Flask(_PackageBoundObject):
 
         :param environ: a WSGI environment
         """
-        assert False
         return RequestContext(self, environ)
 
     def test_request_context(self, *args, **kwargs):
