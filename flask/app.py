@@ -1566,6 +1566,7 @@ class Flask(_PackageBoundObject):
     @setupmethod
     def context_processor(self, f):
         """Registers a template context processor function."""
+        assert False
         self.template_context_processors[None].append(f)
         return f
 
