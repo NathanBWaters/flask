@@ -934,6 +934,7 @@ class _PackageBoundObject(object):
             return '/' + os.path.basename(self.static_folder)
 
     def _set_static_url_path(self, value):
+        assert False
         self._static_url_path = value
 
     static_url_path = property(
