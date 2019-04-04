@@ -254,7 +254,6 @@ class Blueprint(_PackageBoundObject):
         :param name: the optional name of the test, otherwise the
                      function name will be used.
         """
-        assert False
         def decorator(f):
             self.add_app_template_test(f, name=name)
             return f
@@ -331,7 +330,6 @@ class Blueprint(_PackageBoundObject):
         is only executed after each request that is handled by a function of
         that blueprint.
         """
-        assert False
         self.record_once(lambda s: s.app.after_request_funcs
             .setdefault(self.name, []).append(f))
         return f
