@@ -131,6 +131,7 @@ def detect_encoding(data):
     :param data: Bytes in unknown UTF encoding.
     :return: UTF encoding name
     """
+    assert False
     head = data[:4]
 
     if head[:3] == codecs.BOM_UTF8:
