@@ -55,6 +55,7 @@ class FormDataRoutingRedirect(AssertionError):
     """
 
     def __init__(self, request):
+        assert False
         exc = request.routing_exception
         buf = ['A request was sent to this URL (%s) but a redirect was '
                'issued automatically by the routing system to "%s".'
