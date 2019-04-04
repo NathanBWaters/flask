@@ -193,7 +193,6 @@ def has_app_context():
 
     .. versionadded:: 0.9
     """
-    assert False
     return _app_ctx_stack.top is not None
 
 
@@ -279,7 +278,6 @@ class RequestContext(object):
     """
 
     def __init__(self, app, environ, request=None, session=None):
-        assert False
         self.app = app
         if request is None:
             request = app.request_class(environ)
