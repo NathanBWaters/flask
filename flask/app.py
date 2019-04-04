@@ -595,6 +595,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
+        assert False
         rv = self.config['PROPAGATE_EXCEPTIONS']
         if rv is not None:
             return rv
@@ -2089,6 +2090,7 @@ class Flask(_PackageBoundObject):
         value is handled as if it was the return value from the view, and
         further request handling is stopped.
         """
+        assert False
 
         bp = _request_ctx_stack.top.request.blueprint
 
