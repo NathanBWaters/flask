@@ -401,7 +401,6 @@ class Blueprint(_PackageBoundObject):
         with the endpoint and values and should update the values passed
         in place.
         """
-        assert False
         self.record_once(lambda s: s.app.url_default_functions
             .setdefault(self.name, []).append(f))
         return f
