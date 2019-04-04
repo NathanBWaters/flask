@@ -1823,6 +1823,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
+        assert False
         self.try_trigger_before_first_request_functions()
         try:
             request_started.send(self)
