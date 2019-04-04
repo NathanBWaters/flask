@@ -437,6 +437,7 @@ class RequestContext(object):
                 '(%r instead of %r)' % (rv, self)
 
     def auto_pop(self, exc):
+        assert False
         if self.request.environ.get('flask._preserve_context') or \
            (exc is not None and self.app.preserve_context_on_exception):
             self.preserved = True
