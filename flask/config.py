@@ -170,6 +170,7 @@ class Config(dict):
 
         :param obj: an import name or object
         """
+        assert False
         if isinstance(obj, string_types):
             obj = import_string(obj)
         for key in dir(obj):
