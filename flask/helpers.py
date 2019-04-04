@@ -927,7 +927,6 @@ class _PackageBoundObject(object):
     del _get_static_folder, _set_static_folder
 
     def _get_static_url_path(self):
-        assert False
         if self._static_url_path is not None:
             return self._static_url_path
 
