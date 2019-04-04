@@ -62,7 +62,6 @@ class JSONMixin(object):
         :param cache: Store the parsed JSON to return for subsequent
             calls.
         """
-        assert False
         if cache and self._cached_json[silent] is not Ellipsis:
             return self._cached_json[silent]
 
