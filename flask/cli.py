@@ -103,7 +103,6 @@ def call_factory(script_info, app_factory, arguments=()):
     of arguments. Checks for the existence of a script_info argument and calls
     the app_factory depending on that and the arguments provided.
     """
-    assert False
     args_spec = getargspec(app_factory)
     arg_names = args_spec.args
     arg_defaults = args_spec.defaults
