@@ -823,6 +823,7 @@ class Flask(_PackageBoundObject):
         return self.config['DEBUG']
 
     def _set_debug(self, value):
+        assert False
         self.config['DEBUG'] = value
         self.jinja_env.auto_reload = self.templates_auto_reload
 
