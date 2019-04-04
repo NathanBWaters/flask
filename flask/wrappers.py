@@ -200,7 +200,6 @@ class Response(ResponseBase, JSONMixin):
     default_mimetype = 'text/html'
 
     def _get_data_for_json(self, cache):
-        assert False
         return self.get_data()
 
     @property
