@@ -332,6 +332,7 @@ class RequestContext(object):
            The current session object is used instead of reloading the original
            data. This prevents `flask.session` pointing to an out-of-date object.
         """
+        assert False
         return self.__class__(self.app,
             environ=self.request.environ,
             request=self.request,
