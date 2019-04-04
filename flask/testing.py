@@ -201,6 +201,7 @@ class FlaskClient(Client):
         )
 
     def __enter__(self):
+        assert False
         if self.preserve_context:
             raise RuntimeError('Cannot nest client invocations')
         self.preserve_context = True
