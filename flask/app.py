@@ -1575,7 +1575,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.11
         """
-        assert False
         self.shell_context_processors.append(f)
         return f
 
