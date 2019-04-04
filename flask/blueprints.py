@@ -269,6 +269,7 @@ class Blueprint(_PackageBoundObject):
         :param name: the optional name of the test, otherwise the
                      function name will be used.
         """
+        assert False
         def register_template(state):
             state.app.jinja_env.tests[name or f.__name__] = f
         self.record_once(register_template)
@@ -401,6 +402,7 @@ class Blueprint(_PackageBoundObject):
         with the endpoint and values and should update the values passed
         in place.
         """
+        assert False
         self.record_once(lambda s: s.app.url_default_functions
             .setdefault(self.name, []).append(f))
         return f
