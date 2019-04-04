@@ -914,7 +914,6 @@ class _PackageBoundObject(object):
         self._static_url_path = None
 
     def _get_static_folder(self):
-        assert False
         if self._static_folder is not None:
             return os.path.join(self.root_path, self._static_folder)
 
