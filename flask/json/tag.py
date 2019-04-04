@@ -189,7 +189,6 @@ class TagUUID(JSONTag):
     key = ' u'
 
     def check(self, value):
-        assert False
         return isinstance(value, UUID)
 
     def to_json(self, value):
