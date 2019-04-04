@@ -888,7 +888,6 @@ debug mode.
 
 
 def main(as_module=False):
-    assert False
     args = sys.argv[1:]
 
     if as_module:
