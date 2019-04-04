@@ -116,7 +116,6 @@ class PassDict(JSONTag):
     __slots__ = ()
 
     def check(self, value):
-        assert False
         return isinstance(value, dict)
 
     def to_json(self, value):
