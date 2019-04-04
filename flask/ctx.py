@@ -241,6 +241,7 @@ class AppContext(object):
         return self
 
     def __exit__(self, exc_type, exc_value, tb):
+        assert False
         self.pop(exc_value)
 
         if BROKEN_PYPY_CTXMGR_EXIT and exc_type is not None:
