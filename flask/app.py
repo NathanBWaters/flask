@@ -803,6 +803,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.11
         """
+        assert False
         rv = {'app': self, 'g': g}
         for processor in self.shell_context_processors:
             rv.update(processor())
