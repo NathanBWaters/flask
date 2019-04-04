@@ -2052,6 +2052,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
+        assert False
         funcs = self.url_default_functions.get(None, ())
         if '.' in endpoint:
             bp = endpoint.rsplit('.', 1)[0]
