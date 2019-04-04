@@ -2302,7 +2302,6 @@ class Flask(_PackageBoundObject):
             a list of headers, and an optional exception context to
             start the response.
         """
-        assert False
         ctx = self.request_context(environ)
         error = None
         try:
