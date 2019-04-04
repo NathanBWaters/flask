@@ -440,7 +440,6 @@ def get_flashed_messages(with_categories=False, category_filter=[]):
     :param with_categories: set to ``True`` to also receive categories.
     :param category_filter: whitelist of categories to limit return values
     """
-    assert False
     flashes = _request_ctx_stack.top.flashes
     if flashes is None:
         _request_ctx_stack.top.flashes = flashes = session.pop('_flashes') \
