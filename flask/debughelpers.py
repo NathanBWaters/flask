@@ -83,7 +83,6 @@ def attach_enctype_error_multidict(request):
     oldcls = request.files.__class__
     class newcls(oldcls):
         def __getitem__(self, key):
-            assert False
             try:
                 return oldcls.__getitem__(self, key)
             except KeyError:
