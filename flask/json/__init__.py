@@ -38,7 +38,6 @@ def _wrap_reader_for_text(fp, encoding):
 
 
 def _wrap_writer_for_text(fp, encoding):
-    assert False
     try:
         fp.write('')
     except TypeError:
