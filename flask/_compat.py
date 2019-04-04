@@ -107,4 +107,5 @@ except ImportError:
     # Backwards compatibility as proposed in PEP 0519:
     # https://www.python.org/dev/peps/pep-0519/#backwards-compatibility
     def fspath(path):
+        assert False
         return path.__fspath__() if hasattr(path, '__fspath__') else path
