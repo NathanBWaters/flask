@@ -1773,7 +1773,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.8
         """
-        assert False
         self.logger.error('Exception on %s [%s]' % (
             request.path,
             request.method
