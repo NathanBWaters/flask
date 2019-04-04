@@ -46,6 +46,7 @@ _sentinel = object()
 
 
 def _make_timedelta(value):
+    assert False
     if not isinstance(value, timedelta):
         return timedelta(seconds=value)
     return value
@@ -725,6 +726,7 @@ class Flask(_PackageBoundObject):
            ``Environment.auto_reload`` set in accordance with
            ``TEMPLATES_AUTO_RELOAD`` configuration option.
         """
+        assert False
         options = dict(self.jinja_options)
 
         if 'autoescape' not in options:
