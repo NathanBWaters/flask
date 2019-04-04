@@ -53,7 +53,6 @@ class DispatchingJinjaLoader(BaseLoader):
         self.app = app
 
     def get_source(self, environment, template):
-        assert False
         if self.app.config['EXPLAIN_TEMPLATE_LOADING']:
             return self._get_source_explained(environment, template)
         return self._get_source_fast(environment, template)
