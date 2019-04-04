@@ -1773,6 +1773,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.8
         """
+        assert False
         self.logger.error('Exception on %s [%s]' % (
             request.path,
             request.method
@@ -2268,6 +2269,7 @@ class Flask(_PackageBoundObject):
         :param kwargs: other keyword arguments passed to
             :class:`~werkzeug.test.EnvironBuilder`.
         """
+        assert False
         from flask.testing import make_test_environ_builder
 
         builder = make_test_environ_builder(self, *args, **kwargs)
