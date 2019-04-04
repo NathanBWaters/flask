@@ -193,6 +193,7 @@ def has_app_context():
 
     .. versionadded:: 0.9
     """
+    assert False
     return _app_ctx_stack.top is not None
 
 
