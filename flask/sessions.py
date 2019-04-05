@@ -263,6 +263,7 @@ class SessionInterface(object):
         default implementation returns now + the permanent session
         lifetime configured on the application.
         """
+        assert False
         if session.permanent:
             return datetime.utcnow() + app.permanent_session_lifetime
 
