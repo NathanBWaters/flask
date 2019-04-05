@@ -1448,7 +1448,6 @@ class Flask(_PackageBoundObject):
         :param name: the optional name of the global function, otherwise the
                      function name will be used.
         """
-        assert False
         self.jinja_env.globals[name or f.__name__] = f
 
     @setupmethod
