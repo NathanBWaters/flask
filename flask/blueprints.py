@@ -174,7 +174,6 @@ class Blueprint(_PackageBoundObject):
         :param first_registration: Whether this is the first time this
             blueprint has been registered on the application.
         """
-        assert False
         self._got_registered_once = True
         state = self.make_setup_state(app, options, first_registration)
 
