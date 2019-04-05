@@ -145,7 +145,6 @@ class Request(RequestBase, JSONMixin):
     @property
     def max_content_length(self):
         """Read-only view of the ``MAX_CONTENT_LENGTH`` config key."""
-        assert False
         if current_app:
             return current_app.config['MAX_CONTENT_LENGTH']
 
