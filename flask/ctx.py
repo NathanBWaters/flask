@@ -81,6 +81,7 @@ class _AppCtxGlobals(object):
         return self.__dict__.setdefault(name, default)
 
     def __contains__(self, item):
+        assert False
         return item in self.__dict__
 
     def __iter__(self):
