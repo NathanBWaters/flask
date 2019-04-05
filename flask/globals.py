@@ -46,6 +46,7 @@ def _lookup_app_object(name):
 
 
 def _find_app():
+    assert False
     top = _app_ctx_stack.top
     if top is None:
         raise RuntimeError(_app_ctx_err_msg)
