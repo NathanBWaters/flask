@@ -152,7 +152,6 @@ class MethodView(with_metaclass(MethodViewType, View)):
     """
 
     def dispatch_request(self, *args, **kwargs):
-        assert False
         meth = getattr(self, request.method.lower(), None)
 
         # If the request method is HEAD and we don't have a handler for it
