@@ -555,7 +555,6 @@ class FlaskGroup(AppGroup):
         # call into a no-op. This is necessary to avoid ugly errors when the
         # script that is loaded here also attempts to start a server.
         os.environ['FLASK_RUN_FROM_CLI'] = 'true'
-        assert False
 
         if get_load_dotenv(self.load_dotenv):
             load_dotenv()
