@@ -1566,7 +1566,6 @@ class Flask(_PackageBoundObject):
     @setupmethod
     def context_processor(self, f):
         """Registers a template context processor function."""
-        assert False
         self.template_context_processors[None].append(f)
         return f
 
@@ -2053,7 +2052,6 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.7
         """
-        assert False
         funcs = self.url_default_functions.get(None, ())
         if '.' in endpoint:
             bp = endpoint.rsplit('.', 1)[0]
