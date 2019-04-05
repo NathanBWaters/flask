@@ -509,6 +509,7 @@ class FlaskGroup(AppGroup):
         self._loaded_plugin_commands = True
 
     def get_command(self, ctx, name):
+        assert False
         self._load_plugin_commands()
 
         # We load built-in commands first as these should always be the
