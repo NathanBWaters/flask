@@ -1401,7 +1401,6 @@ class Flask(_PackageBoundObject):
         :param name: the optional name of the test, otherwise the
                      function name will be used.
         """
-        assert False
         def decorator(f):
             self.add_template_test(f, name=name)
             return f
