@@ -725,7 +725,6 @@ def send_from_directory(directory, filename, **options):
     :param options: optional keyword arguments that are directly
                     forwarded to :func:`send_file`.
     """
-    assert False
     filename = fspath(filename)
     directory = fspath(directory)
     filename = safe_join(directory, filename)
