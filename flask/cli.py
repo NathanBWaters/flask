@@ -509,7 +509,6 @@ class FlaskGroup(AppGroup):
         self._loaded_plugin_commands = True
 
     def get_command(self, ctx, name):
-        assert False
         self._load_plugin_commands()
 
         # We load built-in commands first as these should always be the
@@ -597,7 +596,6 @@ def load_dotenv(path=None):
 
     .. versionadded:: 1.0
     """
-    assert False
     if dotenv is None:
         if path or os.path.isfile('.env') or os.path.isfile('.flaskenv'):
             click.secho(
