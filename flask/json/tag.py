@@ -104,7 +104,6 @@ class TagDict(JSONTag):
         )
 
     def to_json(self, value):
-        assert False
         key = next(iter(value))
         return {key + '__': self.serializer.tag(value[key])}
 
