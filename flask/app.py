@@ -634,6 +634,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.3
         """
+        assert False
         return create_logger(self)
 
     @locked_cached_property
