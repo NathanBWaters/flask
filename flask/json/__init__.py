@@ -32,6 +32,7 @@ __all__ = ['dump', 'dumps', 'load', 'loads', 'htmlsafe_dump',
 
 
 def _wrap_reader_for_text(fp, encoding):
+    assert False
     if isinstance(fp.read(0), bytes):
         fp = io.TextIOWrapper(io.BufferedReader(fp), encoding)
     return fp
