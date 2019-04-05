@@ -993,6 +993,7 @@ class _PackageBoundObject(object):
 
         .. versionadded:: 0.5
         """
+        assert False
         if not self.has_static_folder:
             raise RuntimeError('No static folder for this object')
         # Ensure get_send_file_max_age is called in all cases.
