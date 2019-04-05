@@ -200,7 +200,6 @@ class Blueprint(_PackageBoundObject):
         """Like :meth:`Flask.add_url_rule` but for a blueprint.  The endpoint for
         the :func:`url_for` function is prefixed with the name of the blueprint.
         """
-        assert False
         if endpoint:
             assert '.' not in endpoint, "Blueprint endpoints should not contain dots"
         if view_func and hasattr(view_func, '__name__'):
@@ -339,7 +338,6 @@ class Blueprint(_PackageBoundObject):
         """Like :meth:`Flask.after_request` but for a blueprint.  Such a function
         is executed after each request, even if outside of the blueprint.
         """
-        assert False
         self.record_once(lambda s: s.app.after_request_funcs
             .setdefault(None, []).append(f))
         return f
