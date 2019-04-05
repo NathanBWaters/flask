@@ -98,7 +98,6 @@ class NullSession(SecureCookieSession):
     """
 
     def _fail(self, *args, **kwargs):
-        assert False
         raise RuntimeError('The session is unavailable because no secret '
                            'key was set.  Set the secret_key on the '
                            'application to something unique and secret.')
@@ -297,7 +296,6 @@ class SessionInterface(object):
         context so if you absolutely need access to the request you can do
         that.
         """
-        assert False
         raise NotImplementedError()
 
 
