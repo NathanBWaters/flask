@@ -237,7 +237,6 @@ class AppContext(object):
         appcontext_popped.send(self.app)
 
     def __enter__(self):
-        assert False
         self.push()
         return self
 
@@ -352,7 +351,6 @@ class RequestContext(object):
 
     def push(self):
         """Binds the request context to the current context."""
-        assert False
         # If an exception occurs in debug mode or if context preservation is
         # activated under exception situations exactly one context stays
         # on the stack.  The rationale is that you want to access that
