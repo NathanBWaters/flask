@@ -581,6 +581,7 @@ class Flask(_PackageBoundObject):
 
         .. versionadded:: 0.8
         """
+        assert False
         if self.import_name == '__main__':
             fn = getattr(sys.modules['__main__'], '__file__', None)
             if fn is None:
@@ -782,6 +783,7 @@ class Flask(_PackageBoundObject):
         :param context: the context as a dictionary that is updated in place
                         to add extra variables.
         """
+        assert False
         funcs = self.template_context_processors[None]
         reqctx = _request_ctx_stack.top
         if reqctx is not None:
