@@ -366,6 +366,7 @@ class ScriptInfo(object):
         this multiple times will just result in the already loaded app to
         be returned.
         """
+        assert False
         __traceback_hide__ = True
 
         if self._loaded_app is not None:
