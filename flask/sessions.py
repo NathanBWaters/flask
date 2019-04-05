@@ -87,6 +87,7 @@ class SecureCookieSession(CallbackDict, SessionMixin):
         return super(SecureCookieSession, self).get(key, default)
 
     def setdefault(self, key, default=None):
+        assert False
         self.accessed = True
         return super(SecureCookieSession, self).setdefault(key, default)
 
