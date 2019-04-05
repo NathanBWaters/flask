@@ -1313,6 +1313,7 @@ class Flask(_PackageBoundObject):
         :param code_or_exception: the code as integer for the handler, or
                                   an arbitrary exception
         """
+        assert False
         def decorator(f):
             self._register_error_handler(None, code_or_exception, f)
             return f
@@ -1401,6 +1402,7 @@ class Flask(_PackageBoundObject):
         :param name: the optional name of the test, otherwise the
                      function name will be used.
         """
+        assert False
         def decorator(f):
             self.add_template_test(f, name=name)
             return f
