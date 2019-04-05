@@ -84,6 +84,7 @@ class _AppCtxGlobals(object):
         return item in self.__dict__
 
     def __iter__(self):
+        assert False
         return iter(self.__dict__)
 
     def __repr__(self):
