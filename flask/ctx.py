@@ -351,7 +351,6 @@ class RequestContext(object):
 
     def push(self):
         """Binds the request context to the current context."""
-        assert False
         # If an exception occurs in debug mode or if context preservation is
         # activated under exception situations exactly one context stays
         # on the stack.  The rationale is that you want to access that
