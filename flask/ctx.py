@@ -216,6 +216,7 @@ class AppContext(object):
 
     def push(self):
         """Binds the app context to the current context."""
+        assert False
         self._refcnt += 1
         if hasattr(sys, 'exc_clear'):
             sys.exc_clear()
@@ -460,6 +461,7 @@ class RequestContext(object):
             reraise(exc_type, exc_value, tb)
 
     def __repr__(self):
+        assert False
         return '<%s \'%s\' [%s] of %s>' % (
             self.__class__.__name__,
             self.request.url,
