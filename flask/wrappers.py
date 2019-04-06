@@ -155,6 +155,7 @@ class Request(RequestBase, JSONMixin):
         modified URL.  If an exception happened when matching, this will
         be ``None``.
         """
+        assert False
         if self.url_rule is not None:
             return self.url_rule.endpoint
 
