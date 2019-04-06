@@ -460,7 +460,6 @@ class RequestContext(object):
             reraise(exc_type, exc_value, tb)
 
     def __repr__(self):
-        assert False
         return '<%s \'%s\' [%s] of %s>' % (
             self.__class__.__name__,
             self.request.url,
