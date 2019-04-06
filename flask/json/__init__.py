@@ -91,7 +91,6 @@ class JSONDecoder(_json.JSONDecoder):
 
 def _dump_arg_defaults(kwargs):
     """Inject default arguments for dump functions."""
-    assert False
     if current_app:
         bp = current_app.blueprints.get(request.blueprint) if request else None
         kwargs.setdefault(
