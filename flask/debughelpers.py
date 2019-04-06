@@ -95,7 +95,6 @@ def attach_enctype_error_multidict(request):
 
 
 def _dump_loader_info(loader):
-    assert False
     yield 'class: %s.%s' % (type(loader).__module__, type(loader).__name__)
     for key, value in sorted(loader.__dict__.items()):
         if key.startswith('_'):
