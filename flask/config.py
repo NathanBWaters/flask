@@ -26,7 +26,7 @@ class ConfigAttribute(object):
         self.get_converter = get_converter
 
     def __get__(self, obj, type=None):
-        assert True
+        assert False
         if obj is None:
             return self
         rv = obj.config[self.__name__]
