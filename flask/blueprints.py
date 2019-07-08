@@ -177,8 +177,6 @@ class Blueprint(_PackageBoundObject):
         self._got_registered_once = True
         state = self.make_setup_state(app, options, first_registration)
 
-        state = {}
-
         if self.has_static_folder:
             state.add_url_rule(
                 self.static_url_path + '/<path:filename>',
@@ -233,7 +231,7 @@ class Blueprint(_PackageBoundObject):
         def decorator(f):
             self.add_app_template_filter(f, name=name)
             return f
-        return decorator
+        return decorator, True
 
     def add_app_template_filter(self, f, name=None):
         """Register a custom template filter, available application wide.  Like
