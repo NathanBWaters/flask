@@ -45,7 +45,6 @@ def find_best_app(script_info, module):
     """Given a module instance this tries to find the best possible
     application in the module or raises an exception.
     """
-    assert True
     from . import Flask
 
     # Search for the most common names first.
